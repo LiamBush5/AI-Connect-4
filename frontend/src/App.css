@@ -1,0 +1,93 @@
+.app {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.title {
+  font-size: 36px;
+  color: #333;
+}
+
+.message {
+  text-align: center;
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.board {
+  display: flex;
+  flex-direction: column;
+  background-color: #007bff;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.row {
+  display: flex;
+  justify-content: center;
+}
+
+.cell {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  margin: 5px;
+  cursor: pointer;
+  background-color: #fff;
+  box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s;
+}
+
+.cell.player1 {
+  background-color: #ff4136;
+}
+
+.cell.player2 {
+  background-color: #ffdc00;
+}
+
+.controls {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.start-btn,
+.end-btn {
+  padding: 10px 20px;
+  font-size: 18px;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin: 0 10px;
+}
+
+.start-btn {
+  background-color: #28a745;
+}
+
+.start-btn:hover {
+  background-color: #218838;
+}
+
+.end-btn {
+  background-color: #dc3545;
+}
+
+.end-btn:hover {
+  background-color: #c82333;
+}
+
+.ai-first-move {
+  margin-left: 20px;
+}
